@@ -1,0 +1,68 @@
+name: Repository Cleanup
+
+on:
+  schedule:
+    # Run weekly on Mondays at 2 AM UTC
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+jobs:
+  cleanup-branches:
+    name: Clean up stale branches
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete merged branches
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          github_token: ${{ github.token }}
+          delete_merged_only: true
+
+  cleanup-prs:
+    name: Close stale pull requests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close stale PRs
+        uses: actions/stale@v8
+        with:
+          repo-token: ${{ github.token }}
+          # Only applies to pull requests
+          only-pr: true
+          # PR is stale after 90 days of inactivity
+          stale-pr-message: 'This pull request has been inactive for 90 days and is being automatically closed.'
+          days-before-pr-stale: 90
+          days-before-pr-close: 7
+          # Preserve important PRs
+          exempt-pr-labels: 'pinned,important,keep'
+          # Don't stale draft PRs
+          skip-stale-issue-message: true
+
+  cleanup-issues:
+    name: Close stale issues
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close stale issues
+        uses: actions/stale@v8
+        with:
+          repo-token: ${{ github.token }}
+          # Only applies to issues
+          only-issues: true
+          # Issue is stale after 180 days of inactivity
+          stale-issue-message: 'This issue has been inactive for 180 days and is being automatically closed.'
+          days-before-issue-stale: 180
+          days-before-issue-close: 7
+          # Preserve important issues
+          exempt-issue-labels: 'pinned,important,keep'
+
+  cleanup-workflows:
+    name: Clean up workflow runs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete old workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          # Delete workflow runs older than 30 days
+          retain-days: 30
+          # Keep at least 3 most recent runs
+          keep-minimum-runs: 3
