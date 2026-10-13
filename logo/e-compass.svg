@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" fill="#14213d"/>
+<circle cx="256" cy="270" r="170" fill="none" stroke="#e9dcc0" stroke-width="4"/>
+<circle cx="256" cy="270" r="156" fill="none" stroke="#e9dcc0" stroke-width="1.5"/>
+<g stroke="#e9dcc0" stroke-width="3">
+<path d="M256 100v14M256 426v14M86 270h14M412 270h14M136 150l10 10M376 150l-10 10M136 390l10-10M376 390l-10-10"/>
+</g>
+<g transform="translate(256 270)">
+<g transform="rotate(45)"><path d="M0-110 18 0 0 110-18 0z" fill="#8a7d63"/><path d="M-110 0 0 18 110 0 0-18z" fill="#8a7d63"/></g>
+<path d="M0-150 26 0H-26z" fill="#e9dcc0"/><path d="M0-150 0 0H-26z" fill="#c9b78f"/>
+<path d="M0 150 26 0H-26z" fill="#c9b78f"/><path d="M0 150 0 0H-26z" fill="#e9dcc0"/>
+<path d="M-150 0 0 26V-26z" fill="#c9b78f"/><path d="M150 0 0 26V-26z" fill="#e9dcc0"/>
+<circle r="10" fill="#14213d" stroke="#e9dcc0" stroke-width="4"/>
+</g>
+<text x="256" y="92" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="64" fill="#f6b73c">M</text>
+</svg>

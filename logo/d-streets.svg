@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" fill="#efe9dc"/>
+<path d="M0 400c60-20 110 10 170-5s90-60 160-50 120 40 182 20V512H0z" fill="#a9d3ea"/>
+<path d="M330 60c40-10 90 10 100 50s-30 60-70 55-60-30-55-60 10-40 25-45z" fill="#c8e0b4"/>
+<path d="M90 150c25-10 55 0 60 25s-20 40-45 35-35-20-30-40 5-15 15-20z" fill="#a9d3ea"/>
+<g stroke="#fff" stroke-width="7" fill="none">
+<path d="M0 100h512M0 210h512M0 300h512M60 0v512M200 0v512M300 0v512M440 0v512M0 40l512 340M120 512L512 180"/>
+</g>
+<g stroke="#d9d2c3" stroke-width="2" fill="none">
+<path d="M0 100h512M0 210h512M0 300h512M60 0v512M200 0v512M300 0v512M440 0v512M0 40l512 340M120 512L512 180"/>
+</g>
+<polyline points="140,380 140,140 256,280 372,140 372,380" fill="none" stroke="#b5651d" stroke-width="44" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="140,380 140,140 256,280 372,140 372,380" fill="none" stroke="#f6b73c" stroke-width="32" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
