@@ -1,20 +1,19 @@
-# Mapzimus route mark
+# Mapzimus logo (locked: option B)
 
-An M drawn as one OSRM-style route: open **origin ring** → ruby **destination stop**.
-Deep cyan + orange, with Archivo from mapzimus.com.
+The M is a road: cream route, dashed orange lane line, open origin ring → orange destination stop,
+inside a deep-cyan tile with an orange outline.
 
 | Use | File |
 |---|---|
-| Avatars (GitHub, LinkedIn, Bluesky…) | `png/mapzimus-mark-cyan-400.png` (or `-1024`) |
-| Large / banners / about page | `png/mapzimus-mark-*-terrain-1024.png` |
-| Illustrator / print | `print/*.pdf` (open directly; fully outlined, no fonts) or `print/*.eps` |
-| Web / editable vector | `mapzimus-mark-*.svg` (layers: background, terrain, mark) |
-| Specs | `png/construction.png`, `board.png` |
+| Profile picture (GitHub, LinkedIn, Bluesky, X…) | `png/mapzimus-logo-400.png` (`-1024` for hi-res uploads) |
+| On light / dark pages | `png/mapzimus-logo-light-*.png`, `png/mapzimus-logo-dark-*.png` |
+| App icon / square crops (Slack, Discord) | `png/mapzimus-icon-*.png` |
+| Website favicon | `favicon.ico`, `mapzimus-favicon.svg`, `png/favicon-180.png` (apple-touch), `png/favicon-192/512.png` (manifest) |
+| Illustrator / print | `print/*.pdf` (open directly, fully outlined) or `print/*.eps` |
+| Editable vector | `*.svg` |
 
-**Construction (1024 artboard, u = 8px):** stroke 13u · outer shoulder radius 13u, inner corners sharp · ~55° diagonals ·
-mitred valley with 3.5u flat · nodes R 10.5u, origin hole 4.5u, destination ring 3u · optical centre 12px above middle ·
-terrain = route offsets every 5u, tone-on-tone.
+The favicon uses a **solid** center line: dashes turn to noise below 48px.
 
-**Palette:** Deep cyan `#0a5c6e` · Paper `#f4efe3` · Orange `#e4690c` (on cyan) / `#f28a2e` (on paper) / `#ff9a4a` (night) · Night `#141618` / `#eceeed`. Paper on cyan = 6.6:1 contrast.
+**Palette:** deep cyan `#0a5c6e` · deep field `#073f4c` · cream `#f4efe3` · orange `#e4690c` (outline, stop) · light orange `#f28a2e` (lane line).
 
-**Don't:** stretch it, outline it, add drop shadows, or swap the ring and dot colors (orange is always the destination). Keep ≥ 8% margin inside any crop.
+**Don't:** stretch it, recolor the stop, drop the orange outline on the avatar, or use the dashed version under 48px.
